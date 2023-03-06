@@ -14,17 +14,18 @@ public class KonturSiteTests extends TestBase {
     @Tag("logo")
     @AllureId("100001")
     @DisplayName("Проверка лого сайта на 'параметры CSS'")
-    void sberLogoTest() {
+    void konturLogoTest() {
         mainPage.openMainPage();
         mainPage.chechLogoFontSize();
     }
+
     @Tag("page")
     @DisplayName("Проверка перехода в разделы сайта.")
     @ParameterizedTest(name = "Выполняется переход в раздел \"{0}\"")
     @CsvSource(value = {
             "Вакансии, Тестирование",
             "Кандидатам, Как попасть на работу в Контур",
-            "Студентам,Образовательные программы",})
+            "Cтудентам, Образовательные программы",})
 
     void testWithCsvSource(String name, String disc) {
         mainPage.openMainPage();
