@@ -3,7 +3,6 @@ package com.alexandrova.tests;
 import com.alexandrova.tests.page.MainPage;
 import com.github.javafaker.Faker;
 import io.qameta.allure.AllureId;
-import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -84,7 +83,7 @@ public class KonturSiteTests extends TestBase {
         mainPage.checkSendResult();
     }
 
-    static @NotNull Stream<Arguments> konturSiteMenuTest() {
+    static Stream<Arguments> konturSiteMenuTest() {
         return Stream.of(
                 Arguments.of("English", List.of("Products\n" +
                         "Company\n" +
