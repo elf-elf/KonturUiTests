@@ -48,7 +48,7 @@ public class KonturSiteTests extends TestBase {
     @DisplayName("Проверка перехода в разделы сайта.")
     @ParameterizedTest(name = "Выполняется переход в раздел \"{0}\"")
     @CsvSource(value = {
-            "Вакансии, Тестирование",
+            "Вакансии, Продажи и работа с клиентами",
             "Кандидатам, Как попасть на работу в Контур",
             "Cтудентам, Образовательные программы",})
     void testWithCsvSource(String name, String disc) {

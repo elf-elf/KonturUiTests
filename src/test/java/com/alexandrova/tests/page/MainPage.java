@@ -5,6 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 import java.io.File;
 import java.util.List;
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.byCssSelector;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
@@ -14,7 +15,8 @@ public class MainPage {
     private final SelenideElement discussYourProject = $(byText("Написать письмо"));
     private final SelenideElement firstName = $x("/html/body/div[8]/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div/div/span/div[2]/div/div/span/label/span[2]/input");
     private final SelenideElement email = $x("/html/body/div[8]/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div/div/span/div[3]/div/div/span/label/span[2]/input");
-    private final SelenideElement picture = $x("/html/body/div[8]/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div/div/span/div[5]/div/div/form/input");
+  //  private final SelenideElement picture = $x("/html/body/div[8]/div/div/div[2]/div/div[2]/div[2]/div[2]/div/div/div/span/div[5]/div/div/form/input");
+    private final SelenideElement picture = $("#body > div:nth-child(41) > div > div > div.react-ui-g3exw9 > div > div.default-default_-Q_XX.Main-container_1zND9 > div.Main-content_337ET > div.styles-mailWrapper_1vjwd > div > div > div > span > div:nth-child(5) > div > div > form > input[type=file]");
     private final SelenideElement userQuestion = $(".react-ui-1xg197j");
 
     public MainPage openMainPage() {
