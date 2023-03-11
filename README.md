@@ -136,3 +136,6 @@ gradle clean test -Denv=remote
 <p align="center">
   <img title="Selenoid Video" src="src/test/resources/img/gif/video.gif">
 </p>
+<div align="left">
+  <img src="https://github.com/elf-elf/elf-elf/blob/main/footer.png" />
+</div>
