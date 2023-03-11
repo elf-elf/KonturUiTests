@@ -9,7 +9,7 @@
 - [Уведомление в Telegram с использованием бота](#-уведомление-в-telegram-с-использованием-бота)
 - [Видео запуска одного из тестов в Selenoid](#-видео-запуска-одного-из-тестов-в-selenoid)
 
-## :computer: Использованный стек технологий
+## :computer: Cтек технологий
 
 <p align="center">
 <img width="6%" title="Java" src="src/test/resources/img/logo/Java.svg">
