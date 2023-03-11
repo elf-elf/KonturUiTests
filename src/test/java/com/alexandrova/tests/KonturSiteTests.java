@@ -38,7 +38,7 @@ public class KonturSiteTests extends TestBase {
     @Test
     @Tag("logo")
     @AllureId("1001")
-    @DisplayName("Проверка лого сайта на 'параметры CSS'")
+    @DisplayName("Проверка логотипа сайта на 'параметры CSS'")
     void konturLogoTest() {
         mainPage.openMainPage();
         mainPage.chechLogoFontSize();
