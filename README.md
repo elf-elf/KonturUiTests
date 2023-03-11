@@ -1,7 +1,5 @@
 ## KonturUiTests - UI автотесты для сайта [Kontur.ru](https://kontur.ru/career/)
 
-## 📘 Содержание:
-
 - [Использованный стек технологий](#computer-использованный-стек-технологий)
 - [Варианты запуска тестов](#-варианты-запуска-тестов)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
@@ -116,7 +114,7 @@ gradle clean test -Denv=remote
 </p>
 
 
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="src/test/resources/img/logo/jiraLogo.png"> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-588">**Jira**</a>
+## Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-588">**Jira**</a>
 
 
 <p align="center">  
