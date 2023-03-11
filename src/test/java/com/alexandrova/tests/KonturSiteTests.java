@@ -2,6 +2,7 @@ package com.alexandrova.tests;
 
 import com.alexandrova.tests.page.MainPage;
 import com.github.javafaker.Faker;
+import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -36,6 +37,7 @@ public class KonturSiteTests extends TestBase {
 
     @Test
     @Tag("logo")
+    @AllureId("15942")
     @DisplayName("Проверка логотипа сайта на 'параметры CSS'")
     void konturLogoTest() {
         mainPage.openMainPage();
@@ -43,6 +45,7 @@ public class KonturSiteTests extends TestBase {
     }
 
     @Tag("page")
+    @AllureId("15870")
     @DisplayName("Проверка перехода в разделы сайта.")
     @ParameterizedTest(name = "Выполняется переход в раздел \"{0}\"")
     @CsvSource(value = {
@@ -56,6 +59,7 @@ public class KonturSiteTests extends TestBase {
     }
 
     @Tag("search")
+    @AllureId("15941")
     @DisplayName("Проверка работы поиска.")
     @CsvSource(value = {"Вакансии, Услуга по созданию"})
     @ParameterizedTest(name = "Результаты поиска содержат текст \"{1}\" для запроса \"{0}\"")
@@ -67,6 +71,7 @@ public class KonturSiteTests extends TestBase {
 
     @Test
     @Tag("form")
+    @AllureId("15940")
     @DisplayName("Проверка заполнения формы 'Написать письмо'")
     void konturWriteEmail() {
         mainPage.openMainPage();
@@ -88,6 +93,7 @@ public class KonturSiteTests extends TestBase {
     }
 
     @MethodSource
+    @AllureId("15943")
     @DisplayName("Проверка наличия разделов сайта на Англ.языке.")
     @ParameterizedTest(name = "Для языка {0} отображаются разделы {1}")
     void konturSiteMenuTest(String lang, List<String> expectedTitle) {
