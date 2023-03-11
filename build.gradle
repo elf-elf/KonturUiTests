@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'io.qameta.allure' version '2.10.0'
-    id "io.freefair.lombok" version "6.5.1"
+    id "io.freefair.lombok" version "6.6.3"
 }
 
 
@@ -9,14 +9,12 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.20.1",
-    selenideVersion = "6.10.3",
+def allureVersion = "2.21.0",
+    selenideVersion = "6.12.2",
     ownerVersion = "1.0.12",
-    junitVersion = "5.9.0",
-    restAssuredVersion = "5.2.0",
-    jacksonDatabindVersion = "2.14.0",
-    assertjCoreVersion = "3.23.1",
-    log4jVersion = "2.19.0"
+    junitVersion = "5.9.2",
+    assertjCoreVersion = "3.24.2",
+    log4jVersion = "2.20.0"
 
 allure {
     report {
@@ -40,23 +38,21 @@ java {
 }
 
 dependencies {
-    implementation 'org.jetbrains:annotations:20.1.0'
+    implementation 'org.jetbrains:annotations:24.0.1'
     testImplementation(
+            "org.aspectj:aspectjweaver:1.9.19",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
-            "io.rest-assured:rest-assured:$restAssuredVersion",
-            "io.qameta.allure:allure-rest-assured:$allureVersion",
-            "com.fasterxml.jackson.core:jackson-databind:$jacksonDatabindVersion",
             "org.assertj:assertj-core:$assertjCoreVersion",
             "org.apache.logging.log4j:log4j-api:$log4jVersion",
             "org.apache.logging.log4j:log4j-core:$log4jVersion",
             "com.github.javafaker:javafaker:1.0.2",
-            "org.jsoup:jsoup:1.13.1",
-            "us.codecraft:xsoup:0.3.2",
-            "org.awaitility:awaitility:4.1.1")
+            "org.jsoup:jsoup:1.15.4",
+            "us.codecraft:xsoup:0.3.6",
+            "org.awaitility:awaitility:4.2.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
 
