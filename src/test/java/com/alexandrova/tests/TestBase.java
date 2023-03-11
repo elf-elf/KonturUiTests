@@ -20,10 +20,10 @@ public class TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
         Configuration.baseUrl = "https://kontur.ru/career/";
-        Configuration.browserVersion = "110.0.5481.178";
+  //      Configuration.browserVersion = "110.0.5481.178";
         Configuration.browserSize = "1920x1080";
-       // Configuration.remote = config.server();
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
+        Configuration.remote = config.server();
+    //    Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC",true);
