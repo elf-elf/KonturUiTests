@@ -2,11 +2,8 @@ package com.alexandrova.tests;
 
 import com.alexandrova.tests.page.MainPage;
 import com.github.javafaker.Faker;
-import io.qameta.allure.AllureId;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import io.qameta.allure.*;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -15,6 +12,13 @@ import java.io.File;
 import java.util.List;
 import java.util.stream.Stream;
 import static com.codeborne.selenide.Selenide.sleep;
+
+@Feature("UI тесты")
+@Owner("Alexandrova Lena")
+@Severity(SeverityLevel.NORMAL)
+@DisplayName("UI тесты для сайта kontur.ru")
+@Tags({@Tag("WEB"), @Tag("MEDIUM"), @Tag("NORMAL")})
+@Link(name = "Kontur", url = "https://kontur.ru/career/")
 
 public class KonturSiteTests extends TestBase {
 
